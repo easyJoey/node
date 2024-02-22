@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-02-22 14:26:39
+# 创建时间：2024-02-22 15:05:30
 # 使用模版：V2RaySE 默认模版
-# 节点数量：13
+# 节点数量：15
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -91,7 +91,9 @@ proxies:
   - {"name":"新加坡1","type":"vless","server":"47.241.209.61","port":443,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"servername":"test57.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"test57.pages.dev"}}}
   - {"name":"美国1","type":"vless","server":"104.21.224.110","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
   - {"name":"美国2","type":"vless","server":"104.21.229.104","port":8880,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"美国3","type":"vless","server":"190.93.247.173","port":443,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"servername":"test57.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"test57.pages.dev"}}}
+  - {"name":"美国3","type":"vless","server":"104.21.236.116","port":8080,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
+  - {"name":"美国4","type":"vless","server":"104.21.224.175","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
+  - {"name":"美国5","type":"vless","server":"104.21.224.16","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
   - {"name":"英国1","type":"vless","server":"104.21.35.134","port":8880,"uuid":"c110df7e-3c6a-4aad-8ce2-4cd9892c049b","servername":"worker-dry-thunder-1f26.skender-allushi4911.workers.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"worker-dry-thunder-1f26.skender-allushi4911.workers.dev"}}}
   - {"name":"英国2","type":"vless","server":"172.67.195.196","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
   - {"name":"香港1","type":"vless","server":"103.30.77.65","port":6443,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","tls":true,"servername":"cmliu-edgetunnel.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cmliu-edgetunnel.pages.dev"}}}
@@ -111,6 +113,8 @@ proxy-groups:
       - 美国1
       - 美国2
       - 美国3
+      - 美国4
+      - 美国5
       - 英国1
       - 英国2
       - 香港1
@@ -130,6 +134,8 @@ proxy-groups:
       - 美国1
       - 美国2
       - 美国3
+      - 美国4
+      - 美国5
       - 英国1
       - 英国2
       - 香港1
@@ -149,6 +155,8 @@ proxy-groups:
       - 美国1
       - 美国2
       - 美国3
+      - 美国4
+      - 美国5
       - 英国1
       - 英国2
       - 香港1
@@ -167,6 +175,8 @@ proxy-groups:
       - 美国1
       - 美国2
       - 美国3
+      - 美国4
+      - 美国5
       - 英国1
       - 英国2
       - 香港1
@@ -185,6 +195,8 @@ proxy-groups:
       - 美国1
       - 美国2
       - 美国3
+      - 美国4
+      - 美国5
       - 英国1
       - 英国2
       - 香港1
@@ -203,6 +215,8 @@ proxy-groups:
       - 美国1
       - 美国2
       - 美国3
+      - 美国4
+      - 美国5
       - 英国1
       - 英国2
       - 香港1
@@ -238,6 +252,8 @@ proxy-groups:
       - 美国1
       - 美国2
       - 美国3
+      - 美国4
+      - 美国5
       - 英国1
       - 英国2
       - 香港1
