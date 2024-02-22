@@ -1,3 +1,11 @@
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash.Meta
+# 创建时间：2024-02-22 14:26:39
+# 使用模版：V2RaySE 默认模版
+# 节点数量：13
+####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -80,21 +88,12 @@ dns:
 proxies:
   - {"name":"加拿大1","type":"vless","server":"129.153.61.213","port":443,"uuid":"51905fd3-29de-4b4e-b351-83542f1d5390","tls":true,"servername":"Bia.alLhub.Ltd","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"Bia.alLhub.Ltd"}}}
   - {"name":"台湾1","type":"vless","server":"118.163.128.81","port":25593,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"baipiao475.stunning-bassoon.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"baipiao475.stunning-bassoon.pages.dev"}}}
-  - {"name":"新加坡1","type":"vless","server":"18.136.194.234","port":8443,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
-  - {"name":"新加坡2","type":"vless","server":"18.136.194.234","port":8443,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
-  - {"name":"新加坡3","type":"vless","server":"54.255.229.41","port":8443,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
-  - {"name":"新加坡4","type":"vless","server":"13.250.118.124","port":41795,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
-  - {"name":"新加坡5","type":"vless","server":"47.241.209.61","port":443,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"servername":"test57.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"test57.pages.dev"}}}
-  - {"name":"日本1","type":"vless","server":"140.238.26.92","port":20855,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
-  - {"name":"日本2","type":"vless","server":"140.238.26.92","port":20855,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
-  - {"name":"日本3","type":"vless","server":"140.238.26.92","port":20855,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
+  - {"name":"新加坡1","type":"vless","server":"47.241.209.61","port":443,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"servername":"test57.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"test57.pages.dev"}}}
   - {"name":"美国1","type":"vless","server":"104.21.224.110","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
   - {"name":"美国2","type":"vless","server":"104.21.229.104","port":8880,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
   - {"name":"美国3","type":"vless","server":"190.93.247.173","port":443,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"servername":"test57.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"test57.pages.dev"}}}
   - {"name":"英国1","type":"vless","server":"104.21.35.134","port":8880,"uuid":"c110df7e-3c6a-4aad-8ce2-4cd9892c049b","servername":"worker-dry-thunder-1f26.skender-allushi4911.workers.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"worker-dry-thunder-1f26.skender-allushi4911.workers.dev"}}}
   - {"name":"英国2","type":"vless","server":"172.67.195.196","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"韩国1","type":"vless","server":"175.199.182.235","port":10050,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
-  - {"name":"韩国2","type":"vless","server":"210.222.133.55","port":32412,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cfed.tgzdyz2.top"}}}
   - {"name":"香港1","type":"vless","server":"103.30.77.65","port":6443,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","tls":true,"servername":"cmliu-edgetunnel.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cmliu-edgetunnel.pages.dev"}}}
   - {"name":"香港2","type":"vless","server":"103.235.18.251","port":10005,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","tls":true,"servername":"cmliu-edgetunnel.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cmliu-edgetunnel.pages.dev"}}}
   - {"name":"香港3","type":"vless","server":"43.154.34.74","port":1935,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"baipiao364.stunning-bassoon.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"baipiao364.stunning-bassoon.pages.dev"}}}
@@ -109,20 +108,11 @@ proxy-groups:
       - 加拿大1
       - 台湾1
       - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 日本1
-      - 日本2
-      - 日本3
       - 美国1
       - 美国2
       - 美国3
       - 英国1
       - 英国2
-      - 韩国1
-      - 韩国2
       - 香港1
       - 香港2
       - 香港3
@@ -137,20 +127,11 @@ proxy-groups:
       - 加拿大1
       - 台湾1
       - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 日本1
-      - 日本2
-      - 日本3
       - 美国1
       - 美国2
       - 美国3
       - 英国1
       - 英国2
-      - 韩国1
-      - 韩国2
       - 香港1
       - 香港2
       - 香港3
@@ -165,20 +146,11 @@ proxy-groups:
       - 加拿大1
       - 台湾1
       - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 日本1
-      - 日本2
-      - 日本3
       - 美国1
       - 美国2
       - 美国3
       - 英国1
       - 英国2
-      - 韩国1
-      - 韩国2
       - 香港1
       - 香港2
       - 香港3
@@ -192,20 +164,11 @@ proxy-groups:
       - 加拿大1
       - 台湾1
       - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 日本1
-      - 日本2
-      - 日本3
       - 美国1
       - 美国2
       - 美国3
       - 英国1
       - 英国2
-      - 韩国1
-      - 韩国2
       - 香港1
       - 香港2
       - 香港3
@@ -219,20 +182,11 @@ proxy-groups:
       - 加拿大1
       - 台湾1
       - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 日本1
-      - 日本2
-      - 日本3
       - 美国1
       - 美国2
       - 美国3
       - 英国1
       - 英国2
-      - 韩国1
-      - 韩国2
       - 香港1
       - 香港2
       - 香港3
@@ -246,20 +200,11 @@ proxy-groups:
       - 加拿大1
       - 台湾1
       - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 日本1
-      - 日本2
-      - 日本3
       - 美国1
       - 美国2
       - 美国3
       - 英国1
       - 英国2
-      - 韩国1
-      - 韩国2
       - 香港1
       - 香港2
       - 香港3
@@ -290,20 +235,11 @@ proxy-groups:
       - 加拿大1
       - 台湾1
       - 新加坡1
-      - 新加坡2
-      - 新加坡3
-      - 新加坡4
-      - 新加坡5
-      - 日本1
-      - 日本2
-      - 日本3
       - 美国1
       - 美国2
       - 美国3
       - 英国1
       - 英国2
-      - 韩国1
-      - 韩国2
       - 香港1
       - 香港2
       - 香港3
