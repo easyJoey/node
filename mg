@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-02-22 15:05:30
+# 创建时间：2024-02-29 12:04:42
 # 使用模版：V2RaySE 默认模版
-# 节点数量：15
+# 节点数量：6
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,144 +86,81 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"加拿大1","type":"vless","server":"129.153.61.213","port":443,"uuid":"51905fd3-29de-4b4e-b351-83542f1d5390","tls":true,"servername":"Bia.alLhub.Ltd","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"Bia.alLhub.Ltd"}}}
-  - {"name":"台湾1","type":"vless","server":"118.163.128.81","port":25593,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"baipiao475.stunning-bassoon.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"baipiao475.stunning-bassoon.pages.dev"}}}
-  - {"name":"新加坡1","type":"vless","server":"47.241.209.61","port":443,"uuid":"d672ec4f-afba-4f61-af09-eec872f97e99","tls":true,"servername":"test57.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"test57.pages.dev"}}}
-  - {"name":"美国1","type":"vless","server":"104.21.224.110","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"美国2","type":"vless","server":"104.21.229.104","port":8880,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"美国3","type":"vless","server":"104.21.236.116","port":8080,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"美国4","type":"vless","server":"104.21.224.175","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"美国5","type":"vless","server":"104.21.224.16","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"英国1","type":"vless","server":"104.21.35.134","port":8880,"uuid":"c110df7e-3c6a-4aad-8ce2-4cd9892c049b","servername":"worker-dry-thunder-1f26.skender-allushi4911.workers.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"worker-dry-thunder-1f26.skender-allushi4911.workers.dev"}}}
-  - {"name":"英国2","type":"vless","server":"172.67.195.196","port":80,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
-  - {"name":"香港1","type":"vless","server":"103.30.77.65","port":6443,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","tls":true,"servername":"cmliu-edgetunnel.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cmliu-edgetunnel.pages.dev"}}}
-  - {"name":"香港2","type":"vless","server":"103.235.18.251","port":10005,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","tls":true,"servername":"cmliu-edgetunnel.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cmliu-edgetunnel.pages.dev"}}}
-  - {"name":"香港3","type":"vless","server":"43.154.34.74","port":1935,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"baipiao364.stunning-bassoon.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"baipiao364.stunning-bassoon.pages.dev"}}}
-  - {"name":"香港4","type":"vless","server":"103.235.18.251","port":10005,"uuid":"90cd4a77-141a-43c9-991b-08263cfe9c10","tls":true,"servername":"cmliu-edgetunnel.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"cmliu-edgetunnel.pages.dev"}}}
-  - {"name":"香港5","type":"vless","server":"43.154.34.74","port":1935,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"baipiao364.stunning-bassoon.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"baipiao364.stunning-bassoon.pages.dev"}}}
+  - {"name":"台湾01-302M","type":"vless","server":"118.163.128.81","port":25593,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"baipiao475.stunning-bassoon.pages.dev","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"baipiao475.stunning-bassoon.pages.dev"}}}
+  - {"name":"台湾02-152M-GPT解锁","type":"trojan","server":"dotu-twv2.03p4fad6vd.com","port":11017,"udp":true,"password":"565aa5e6-15ff-3f58-b134-4ac80c744d48","sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国01-345M-GPT解锁","type":"vmess","server":"104.21.54.252","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.velvetmountain.shop"}}}
+  - {"name":"美国02-282M-GPT解锁","type":"vmess","server":"172.67.166.194","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.coldstone.club"}}}
+  - {"name":"美国03-259M","type":"vless","server":"104.21.225.197","port":8080,"uuid":"e28bb3f8-e64a-4419-9496-33c46220354b","servername":"sdgf.bdfstt.sbs","network":"ws","ws-opts":{"path":"Twitter苏小柠","headers":{"host":"sdgf.bdfstt.sbs"}}}
+  - {"name":"美国04-337M-GPT解锁","type":"vmess","server":"172.67.166.194","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.coldstone.club"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 加拿大1
-      - 台湾1
-      - 新加坡1
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 英国1
-      - 英国2
-      - 香港1
-      - 香港2
-      - 香港3
-      - 香港4
-      - 香港5
+      - 台湾01-302M
+      - 台湾02-152M-GPT解锁
+      - 美国01-345M-GPT解锁
+      - 美国02-282M-GPT解锁
+      - 美国03-259M
+      - 美国04-337M-GPT解锁
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 加拿大1
-      - 台湾1
-      - 新加坡1
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 英国1
-      - 英国2
-      - 香港1
-      - 香港2
-      - 香港3
-      - 香港4
-      - 香港5
+      - 台湾01-302M
+      - 台湾02-152M-GPT解锁
+      - 美国01-345M-GPT解锁
+      - 美国02-282M-GPT解锁
+      - 美国03-259M
+      - 美国04-337M-GPT解锁
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 加拿大1
-      - 台湾1
-      - 新加坡1
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 英国1
-      - 英国2
-      - 香港1
-      - 香港2
-      - 香港3
-      - 香港4
-      - 香港5
+      - 台湾01-302M
+      - 台湾02-152M-GPT解锁
+      - 美国01-345M-GPT解锁
+      - 美国02-282M-GPT解锁
+      - 美国03-259M
+      - 美国04-337M-GPT解锁
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 加拿大1
-      - 台湾1
-      - 新加坡1
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 英国1
-      - 英国2
-      - 香港1
-      - 香港2
-      - 香港3
-      - 香港4
-      - 香港5
+      - 台湾01-302M
+      - 台湾02-152M-GPT解锁
+      - 美国01-345M-GPT解锁
+      - 美国02-282M-GPT解锁
+      - 美国03-259M
+      - 美国04-337M-GPT解锁
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 加拿大1
-      - 台湾1
-      - 新加坡1
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 英国1
-      - 英国2
-      - 香港1
-      - 香港2
-      - 香港3
-      - 香港4
-      - 香港5
+      - 台湾01-302M
+      - 台湾02-152M-GPT解锁
+      - 美国01-345M-GPT解锁
+      - 美国02-282M-GPT解锁
+      - 美国03-259M
+      - 美国04-337M-GPT解锁
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 加拿大1
-      - 台湾1
-      - 新加坡1
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 英国1
-      - 英国2
-      - 香港1
-      - 香港2
-      - 香港3
-      - 香港4
-      - 香港5
+      - 台湾01-302M
+      - 台湾02-152M-GPT解锁
+      - 美国01-345M-GPT解锁
+      - 美国02-282M-GPT解锁
+      - 美国03-259M
+      - 美国04-337M-GPT解锁
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -246,21 +183,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 加拿大1
-      - 台湾1
-      - 新加坡1
-      - 美国1
-      - 美国2
-      - 美国3
-      - 美国4
-      - 美国5
-      - 英国1
-      - 英国2
-      - 香港1
-      - 香港2
-      - 香港3
-      - 香港4
-      - 香港5
+      - 台湾01-302M
+      - 台湾02-152M-GPT解锁
+      - 美国01-345M-GPT解锁
+      - 美国02-282M-GPT解锁
+      - 美国03-259M
+      - 美国04-337M-GPT解锁
 
 rules:
 # 本地/局域网地址
