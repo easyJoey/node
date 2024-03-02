@@ -4,49 +4,59 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-dns:
-  enabled: true
-  nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
 proxies:
-  - {name: 🇹🇼 台湾01, server: gz3.ddnsjj.xyz, port: 45211, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
-  - {name: 🇹🇼 台湾02, server: ty11t.twty.dynu.net, port: 13761, client-fingerprint: chrome, type: trojan, password: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a, sni: ty11t.twty.dynu.net, skip-cert-verify: false}
-  - {name: 🇹🇼 台湾03, server: gz3.ddnsjj.xyz, port: 45211, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: gz3.ddnsjj.xyz}}}
-  - {name: 🇹🇼 台湾04, server: 118.163.128.81, port: 25593, client-fingerprint: chrome, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: baipiao475.stunning-bassoon.pages.dev, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: baipiao475.stunning-bassoon.pages.dev}}}
-  - {name: 🇹🇼 台湾05, server: 118.163.101.44, port: 44332, client-fingerprint: chrome, type: vless, uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1, tls: true, tfo: false, skip-cert-verify: false, servername: cf.xujiang.link, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: cf.xujiang.link}}}
-  - {name: 🇸🇬 新加坡01, server: v6.gz3.ddnsjj.xyz, port: 45721, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: v6.gz3.ddnsjj.xyz}}}
-  - {name: 🇸🇬 新加坡02, server: 183.233.187.210, port: 45721, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
-  - {name: 🇸🇬 新加坡03, server: 183.233.187.210, port: 45711, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: v6.gz3.ddnsjj.xyz}}}
-  - {name: 🇸🇬 新加坡04, server: v6.gz3.ddnsjj.xyz, port: 45711, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
-  - {name: 🇯🇵 日本01, server: 140.238.28.25, port: 8443, client-fingerprint: chrome, type: vless, uuid: 01ab9337-f478-4765-9534-88f009f83ddb, tls: true, tfo: false, skip-cert-verify: false, servername: aut.vtcss.top, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: aut.vtcss.top}}}
-  - {name: 🇺🇸 美国01, server: 188.42.88.103, port: 443, client-fingerprint: chrome, type: vless, uuid: 01ab9337-f478-4765-9534-88f009f83ddb, tls: true, tfo: false, skip-cert-verify: false, servername: aut.vtcss.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aut.vtcss.top}}}
-  - {name: 🇺🇸 美国02, server: 104.21.54.252, port: 8080, client-fingerprint: chrome, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}}
-  - {name: 🇺🇸 美国03, server: 104.21.54.252, port: 8080, client-fingerprint: chrome, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}}
-  - {name: 🇺🇸 美国04, server: 104.17.88.212, port: 443, client-fingerprint: chrome, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: baipiao188.stunning-bassoon.pages.dev, network: ws, ws-opts: {path: "path/telegram@v2ray_alpha/?ed=2048", headers: {Host: baipiao188.stunning-bassoon.pages.dev}}}
-  - {name: 🇺🇸 美国05, server: 104.21.54.252, port: 8080, client-fingerprint: chrome, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}}
-  - {name: 🇺🇸 美国06, server: 164.38.155.58, port: 443, client-fingerprint: chrome, type: vless, uuid: 01ab9337-f478-4765-9534-88f009f83ddb, tls: true, tfo: false, skip-cert-verify: false, servername: aut.vtcss.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aut.vtcss.top}}}
-  - {name: 🇺🇸 美国07, server: 104.21.238.72, port: 80, client-fingerprint: chrome, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
-  - {name: 🇺🇸 美国08, server: 104.21.225.5, port: 80, client-fingerprint: chrome, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
-  - {name: 🇺🇸 美国09, server: 104.21.238.82, port: 2095, client-fingerprint: chrome, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
-  - {name: 🇺🇸 美国10, server: 104.21.228.24, port: 80, client-fingerprint: chrome, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
-  - {name: 🇺🇸 美国11, server: 104.21.233.107, port: 2082, client-fingerprint: chrome, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
-  - {name: 🇺🇸 美国12, server: 104.21.224.32, port: 80, client-fingerprint: chrome, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
-  - {name: 🇺🇸 美国13, server: 104.21.18.154, port: 80, client-fingerprint: chrome, type: vless, uuid: 0c1823f5-e8b1-4cfe-8f8b-441f8dd42fd2, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: server3.mobileberooz-e41.workers.dev}}}
-  - {name: 🇺🇸 美国14, server: www.visa.com.hk, port: 8443, client-fingerprint: chrome, type: vless, uuid: d672ec4f-afba-4f61-af09-eec872f97e99, tls: true, tfo: false, skip-cert-verify: false, servername: test006.pages.dev, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: test006.pages.dev}}}
-  - {name: 🇺🇸 美国15, server: vpnctvip.zahedan.eu.org, port: 80, client-fingerprint: chrome, type: vless, uuid: aabc3ef9-6968-4311-81b8-8cd0414c1904, tls: false, tfo: false, skip-cert-verify: false, servername: luact.zahedan.eu.org, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: luact.zahedan.eu.org}}}
-  - {name: 🇺🇸 美国16, server: ji--join.outline-vpn.cloud, port: 80, client-fingerprint: chrome, type: vless, uuid: bda4be04-48bf-4df1-aaf2-6d42522eab6b, tls: false, tfo: false, skip-cert-verify: false, servername: ehda.sajaditsme.com, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: ehda.sajaditsme.com}}}
-  - {name: 🇰🇷 韩国01, server: 193.122.113.89, port: 443, client-fingerprint: chrome, type: vless, uuid: 01ab9337-f478-4765-9534-88f009f83ddb, tls: true, tfo: false, skip-cert-verify: false, servername: aut.vtcss.top, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: aut.vtcss.top}}}
-  - {name: 🇭🇰 香港01, server: gz3.ddnsjj.xyz, port: 45111, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: gz3.ddnsjj.xyz}}}
-  - {name: 🇭🇰 香港02, server: gz3.ddnsjj.xyz, port: 45111, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
-  - {name: 🇭🇰 香港03, server: 43.154.34.74, port: 1935, client-fingerprint: chrome, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: baipiao364.stunning-bassoon.pages.dev, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: baipiao364.stunning-bassoon.pages.dev}}}
-  - {name: 🇲🇾 马来西亚01, server: gz3.ddnsjj.xyz, port: 45511, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: gz3.ddnsjj.xyz}}}
-  - {name: 🇲🇾 马来西亚02, server: gz3.ddnsjj.xyz, port: 45511, client-fingerprint: chrome, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
+  - {name: 🇨🇳 台湾01, server: gz3.ddnsjj.xyz, port: 45211, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
+  - {name: 🇨🇳 台湾02, server: ty11t.twty.dynu.net, port: 13761, type: trojan, password: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a, sni: ty11t.twty.dynu.net, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾03, server: gz3.ddnsjj.xyz, port: 45211, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: gz3.ddnsjj.xyz}}}
+  - {name: 🇨🇳 台湾04, server: 118.163.128.81, port: 25593, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: baipiao475.stunning-bassoon.pages.dev, network: ws, ws-opts: {path: /Twitter苏小柠, headers: {Host: baipiao475.stunning-bassoon.pages.dev}}}
+  - {name: 🇨🇳 台湾05, server: 118.163.101.44, port: 44332, type: vless, uuid: 4bada4e0-0f18-4b3e-bdd9-94891134b9b1, tls: true, tfo: false, skip-cert-verify: false, servername: cf.xujiang.link, network: ws, ws-opts: {path: /Twitter苏小柠, headers: {Host: cf.xujiang.link}}}
+  - {name: 🇨🇳 台湾06, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40005, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾07, server: b13.ntbq.dynu.net, port: 9489, type: trojan, password: 645f0af0-dec8-48db-862f-82b6346408b4, sni: b13.ntbq.dynu.net, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾08, server: ty12t.twty.dynu.net, port: 18912, type: trojan, password: 645f0af0-dec8-48db-862f-82b6346408b4, sni: ty12t.twty.dynu.net, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾09, server: b23.ntbq.dynu.net, port: 18701, type: trojan, password: 8258210b-4b61-4d96-be4f-4e6be911a6e7, sni: b23.ntbq.dynu.net, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾10, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40001, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾11, server: b24.ntbq.dynu.net, port: 3271, type: trojan, password: 6c7e728e-29d9-41be-8be0-1e56b536e840, sni: b24.ntbq.dynu.net, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾12, server: b23.ntbq.dynu.net, port: 18701, type: trojan, password: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a, sni: b23.ntbq.dynu.net, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾13, server: ty12t.twty.dynu.net, port: 18912, type: trojan, password: 8258210b-4b61-4d96-be4f-4e6be911a6e7, sni: ty12t.twty.dynu.net, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾14, server: ty12t.twty.dynu.net, port: 18912, type: trojan, password: 6c7e728e-29d9-41be-8be0-1e56b536e840, sni: ty12t.twty.dynu.net, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾15, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40010, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡01, server: v6.gz3.ddnsjj.xyz, port: 45721, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: v6.gz3.ddnsjj.xyz}}}
+  - {name: 🇸🇬 新加坡02, server: 183.233.187.210, port: 45721, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
+  - {name: 🇸🇬 新加坡03, server: 183.233.187.210, port: 45711, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: v6.gz3.ddnsjj.xyz}}}
+  - {name: 🇸🇬 新加坡04, server: v6.gz3.ddnsjj.xyz, port: 45711, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
+  - {name: 🇸🇬 新加坡05, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40005, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡06, server: xijinping.19890604.day, port: 10817, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本01, server: 140.238.28.25, port: 8443, type: vless, uuid: 01ab9337-f478-4765-9534-88f009f83ddb, tls: true, tfo: false, skip-cert-verify: false, servername: aut.vtcss.top, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: aut.vtcss.top}}}
+  - {name: 🇺🇸 美国01, server: 188.42.88.103, port: 443, type: vless, uuid: 01ab9337-f478-4765-9534-88f009f83ddb, tls: true, tfo: false, skip-cert-verify: false, servername: aut.vtcss.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aut.vtcss.top}}}
+  - {name: 🇺🇸 美国02, server: 104.21.54.252, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}}
+  - {name: 🇺🇸 美国03, server: 104.21.54.252, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}}
+  - {name: 🇺🇸 美国04, server: 104.17.88.212, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: baipiao188.stunning-bassoon.pages.dev, network: ws, ws-opts: {path: "path/telegram@v2ray_alpha/?ed=2048", headers: {Host: baipiao188.stunning-bassoon.pages.dev}}}
+  - {name: 🇺🇸 美国05, server: 104.21.54.252, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}}
+  - {name: 🇺🇸 美国06, server: 164.38.155.58, port: 443, type: vless, uuid: 01ab9337-f478-4765-9534-88f009f83ddb, tls: true, tfo: false, skip-cert-verify: false, servername: aut.vtcss.top, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aut.vtcss.top}}}
+  - {name: 🇺🇸 美国07, server: 104.21.238.72, port: 80, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
+  - {name: 🇺🇸 美国08, server: 104.21.225.5, port: 80, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
+  - {name: 🇺🇸 美国09, server: 104.21.238.82, port: 2095, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
+  - {name: 🇺🇸 美国10, server: 104.21.228.24, port: 80, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
+  - {name: 🇺🇸 美国11, server: 104.21.233.107, port: 2082, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
+  - {name: 🇺🇸 美国12, server: 104.21.224.32, port: 80, type: vless, uuid: e28bb3f8-e64a-4419-9496-33c46220354b, tls: false, tfo: false, skip-cert-verify: false, servername: sdgf.bdfstt.sbs, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: sdgf.bdfstt.sbs}}}
+  - {name: 🇺🇸 美国13, server: 104.21.18.154, port: 80, type: vless, uuid: 0c1823f5-e8b1-4cfe-8f8b-441f8dd42fd2, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: server3.mobileberooz-e41.workers.dev}}}
+  - {name: 🇺🇸 美国14, server: www.visa.com.hk, port: 8443, type: vless, uuid: d672ec4f-afba-4f61-af09-eec872f97e99, tls: true, tfo: false, skip-cert-verify: false, servername: test006.pages.dev, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: test006.pages.dev}}}
+  - {name: 🇺🇸 美国15, server: vpnctvip.zahedan.eu.org, port: 80, type: vless, uuid: aabc3ef9-6968-4311-81b8-8cd0414c1904, tls: false, tfo: false, skip-cert-verify: false, servername: luact.zahedan.eu.org, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: luact.zahedan.eu.org}}}
+  - {name: 🇺🇸 美国16, server: ji--join.outline-vpn.cloud, port: 80, type: vless, uuid: bda4be04-48bf-4df1-aaf2-6d42522eab6b, tls: false, tfo: false, skip-cert-verify: false, servername: ehda.sajaditsme.com, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: ehda.sajaditsme.com}}}
+  - {name: 🇺🇸 美国17, server: xijinping.19890604.day, port: 10817, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
+  - {name: 🇺🇸 美国18, server: xijinping.19890604.day, port: 10813, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国01, server: 193.122.113.89, port: 443, type: vless, uuid: 01ab9337-f478-4765-9534-88f009f83ddb, tls: true, tfo: false, skip-cert-verify: false, servername: aut.vtcss.top, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: aut.vtcss.top}}}
+  - {name: 🇰🇷 韩国02, server: kr.pxiz.site, port: 28902, type: vmess, uuid: 2da64de4-54d0-4611-ab16-3401a8d16f0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: baidu.com}}}
+  - {name: 🇭🇰 香港01, server: gz3.ddnsjj.xyz, port: 45111, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: gz3.ddnsjj.xyz}}}
+  - {name: 🇭🇰 香港02, server: gz3.ddnsjj.xyz, port: 45111, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
+  - {name: 🇭🇰 香港03, server: 43.154.34.74, port: 1935, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: baipiao364.stunning-bassoon.pages.dev, network: ws, ws-opts: {path: Twitter苏小柠, headers: {Host: baipiao364.stunning-bassoon.pages.dev}}}
+  - {name: 🇭🇰 香港04, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40006, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港05, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40006, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港06, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40005, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港07, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40005, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港08, server: cn.hn.yh.01.relay.kuaishou-cdn.uk, port: 40005, type: vmess, uuid: a34984ad-b2bb-3f34-b9a6-61a63ff6404e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇲🇾 马来西亚01, server: gz3.ddnsjj.xyz, port: 45511, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: gz3.ddnsjj.xyz}}}
+  - {name: 🇲🇾 马来西亚02, server: gz3.ddnsjj.xyz, port: 45511, type: vmess, uuid: 8086f571-7ee4-37d7-af75-249e0ffdf437, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /8858d045-66fe-441a-8d35-1507216fbb2f.live238.m3u8, headers: {Host: cmihk.bilibili.com}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -62,15 +72,27 @@ proxy-groups:
   - name: 🚀 手动切换1
     type: select
     proxies:
-      - 🇹🇼 台湾01
-      - 🇹🇼 台湾02
-      - 🇹🇼 台湾03
-      - 🇹🇼 台湾04
-      - 🇹🇼 台湾05
+      - 🇨🇳 台湾01
+      - 🇨🇳 台湾02
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾04
+      - 🇨🇳 台湾05
+      - 🇨🇳 台湾06
+      - 🇨🇳 台湾07
+      - 🇨🇳 台湾08
+      - 🇨🇳 台湾09
+      - 🇨🇳 台湾10
+      - 🇨🇳 台湾11
+      - 🇨🇳 台湾12
+      - 🇨🇳 台湾13
+      - 🇨🇳 台湾14
+      - 🇨🇳 台湾15
       - 🇸🇬 新加坡01
       - 🇸🇬 新加坡02
       - 🇸🇬 新加坡03
       - 🇸🇬 新加坡04
+      - 🇸🇬 新加坡05
+      - 🇸🇬 新加坡06
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇺🇸 美国02
@@ -88,10 +110,18 @@ proxy-groups:
       - 🇺🇸 美国14
       - 🇺🇸 美国15
       - 🇺🇸 美国16
+      - 🇺🇸 美国17
+      - 🇺🇸 美国18
       - 🇰🇷 韩国01
+      - 🇰🇷 韩国02
       - 🇭🇰 香港01
       - 🇭🇰 香港02
       - 🇭🇰 香港03
+      - 🇭🇰 香港04
+      - 🇭🇰 香港05
+      - 🇭🇰 香港06
+      - 🇭🇰 香港07
+      - 🇭🇰 香港08
       - 🇲🇾 马来西亚01
       - 🇲🇾 马来西亚02
   - name: ♻️ 自动选择
@@ -100,15 +130,27 @@ proxy-groups:
     interval: 300
     tolerance: 200
     proxies:
-      - 🇹🇼 台湾01
-      - 🇹🇼 台湾02
-      - 🇹🇼 台湾03
-      - 🇹🇼 台湾04
-      - 🇹🇼 台湾05
+      - 🇨🇳 台湾01
+      - 🇨🇳 台湾02
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾04
+      - 🇨🇳 台湾05
+      - 🇨🇳 台湾06
+      - 🇨🇳 台湾07
+      - 🇨🇳 台湾08
+      - 🇨🇳 台湾09
+      - 🇨🇳 台湾10
+      - 🇨🇳 台湾11
+      - 🇨🇳 台湾12
+      - 🇨🇳 台湾13
+      - 🇨🇳 台湾14
+      - 🇨🇳 台湾15
       - 🇸🇬 新加坡01
       - 🇸🇬 新加坡02
       - 🇸🇬 新加坡03
       - 🇸🇬 新加坡04
+      - 🇸🇬 新加坡05
+      - 🇸🇬 新加坡06
       - 🇯🇵 日本01
       - 🇺🇸 美国01
       - 🇺🇸 美国02
@@ -126,10 +168,18 @@ proxy-groups:
       - 🇺🇸 美国14
       - 🇺🇸 美国15
       - 🇺🇸 美国16
+      - 🇺🇸 美国17
+      - 🇺🇸 美国18
       - 🇰🇷 韩国01
+      - 🇰🇷 韩国02
       - 🇭🇰 香港01
       - 🇭🇰 香港02
       - 🇭🇰 香港03
+      - 🇭🇰 香港04
+      - 🇭🇰 香港05
+      - 🇭🇰 香港06
+      - 🇭🇰 香港07
+      - 🇭🇰 香港08
       - 🇲🇾 马来西亚01
       - 🇲🇾 马来西亚02
   - name: 🌍 国外媒体
@@ -237,6 +287,8 @@ proxy-groups:
       - 🇺🇸 美国14
       - 🇺🇸 美国15
       - 🇺🇸 美国16
+      - 🇺🇸 美国17
+      - 🇺🇸 美国18
   - name: 🇭🇰 香港自动
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -246,17 +298,32 @@ proxy-groups:
       - 🇭🇰 香港01
       - 🇭🇰 香港02
       - 🇭🇰 香港03
+      - 🇭🇰 香港04
+      - 🇭🇰 香港05
+      - 🇭🇰 香港06
+      - 🇭🇰 香港07
+      - 🇭🇰 香港08
   - name: 🇨🇳 台湾自动
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇹🇼 台湾01
-      - 🇹🇼 台湾02
-      - 🇹🇼 台湾03
-      - 🇹🇼 台湾04
-      - 🇹🇼 台湾05
+      - 🇨🇳 台湾01
+      - 🇨🇳 台湾02
+      - 🇨🇳 台湾03
+      - 🇨🇳 台湾04
+      - 🇨🇳 台湾05
+      - 🇨🇳 台湾06
+      - 🇨🇳 台湾07
+      - 🇨🇳 台湾08
+      - 🇨🇳 台湾09
+      - 🇨🇳 台湾10
+      - 🇨🇳 台湾11
+      - 🇨🇳 台湾12
+      - 🇨🇳 台湾13
+      - 🇨🇳 台湾14
+      - 🇨🇳 台湾15
   - name: 🇸🇬 狮城自动
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -267,6 +334,8 @@ proxy-groups:
       - 🇸🇬 新加坡02
       - 🇸🇬 新加坡03
       - 🇸🇬 新加坡04
+      - 🇸🇬 新加坡05
+      - 🇸🇬 新加坡06
   - name: 🇯🇵 日本自动
     type: url-test
     url: http://www.gstatic.com/generate_204
