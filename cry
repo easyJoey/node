@@ -195,8 +195,8 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 60
+    tolerance: 10
     proxies:
       - 公益机场 https://github.com/Cry1ngMan/1 喜欢就要白嫖⚡️ 2_1
       - 公益机场 https://github.com/Cry1ngMan/1 喜欢就要白嫖⚡️ 6_1
